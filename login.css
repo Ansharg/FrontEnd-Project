@@ -22,13 +22,15 @@ body{
 } */
 .container{
     height: 73vh;
-    width: 49vw;
+    max-width: 49vw;
+    width: fit-content;
     border-radius: 3px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: start; 
     padding-top:1vh ; 
+    overflow: hidden;
 }
 .head{
     display: flex;
@@ -85,7 +87,8 @@ body{
 .btn{
     display: flex;
     border: 1px solid #dee0e1;
-    border-radius: 3px;   
+    border-radius: 3px;
+    width: 100%;   
 }
 .btn:hover,button{
     background-color: rgb(245,245,245);
@@ -185,6 +188,7 @@ label{
 .lang ul a{
     text-decoration: none;
     color: #195FAA;
+    font-size: 0.8rem;
 }
 .footer{
     width: 100%;
@@ -204,6 +208,7 @@ label{
 .footer ul a{
     text-decoration: none;
     color: #636466;
+    font-size: 0.75rem;
 }
 .footer ul a:hover{
     text-decoration: underline;
