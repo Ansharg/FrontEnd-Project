@@ -112,7 +112,7 @@ button{
 } */
 .image{
     height:100%;
-    width: 12%;
+    width: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,4 +238,13 @@ label{
 }
 .footer ul a:hover{
     text-decoration: underline;
+}
+@media (max-width:700px) {
+    body{
+        background-color: #195FAA;
+        background-image: none;
+    }
+    .container{
+        display: none;
+    }
 }
