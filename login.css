@@ -21,8 +21,10 @@ body{
     border: 1px solid red; 
 } */
 .container{
+    min-height: 548px;
     height: 73vh;
-    width: 700px;
+    min-width: 700px;
+    width: 40vw;
     /* width: fit-content;  */
     /* width: 49%; */
     margin:0 auto 0 auto;
@@ -112,7 +114,7 @@ button{
 } */
 .image{
     height:100%;
-    width: 12%;
+    width: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,4 +240,120 @@ label{
 }
 .footer ul a:hover{
     text-decoration: underline;
+}
+.top-image{
+    display: none;
+}
+.mobile-main{
+    display: none;
+}
+@media (max-width:700px) {
+    body{
+        background-image: url("./Asests/mobile_login_bg.webp");
+        background-repeat: repeat;
+        background-size: 100px;
+    }
+    .container{
+        display: none;
+    }
+    .top-image{
+        display: block;
+        background-image: url('./Asests/mobile_login_top.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 55vh;
+        position: absolute;
+        top: -13%;
+    }
+    .mobile-main{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 60vh;
+        /* background-color: red; */
+        position: relative;
+        padding:0 3vw;
+    }
+    .head{
+        border-bottom: 0.5px solid #fff;
+        padding-bottom:10vh;
+        /* background-color: red; */
+        margin-top: 10%;
+    }
+    .head img{
+        width: 35.5%;
+        margin-bottom: 2.5%;
+    }
+    .head p{
+        color: #fff;
+    }
+    .login-ways p{
+        margin-top: 2%;
+        color: #fff;
+        font-size: 0.82rem;
+    }
+    .login-ways a{
+        text-decoration: none;
+        color: #195FAA;
+        font-size: 0.82rem;
+    }
+    .buttons{
+        margin-top: 3%;
+    }
+    .btn{
+        background-color: #fff;
+        margin-top: 1%;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+    }
+    .image{
+        height: 10%;
+        width: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    .image img{
+        width: 50%;
+        height: 50%;
+    }
+    .login-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        padding:2.5vh 0;
+        border-bottom: 0.5px solid #fff;
+    }
+    .login-btn button{
+        color: #fff;
+        background-color: #ACB9BD;
+        text-align: center;
+        padding: 1vh 0;
+        width: 48%;
+        border-radius: 30px;
+    }
+    .about-flex{
+        display: flex;
+        /* background-color: red; */
+        width: 100%;
+    }
+    .about-flex ul{
+        list-style: none;
+        color: #fff;
+        display: flex;
+        gap:0.7vw;
+        padding: 1vh 0;
+        font-size: 0.82rem;
+        text-align: center;
+    }
+    .about-flex ul a{
+        color: #fff;
+    }
+    .about-flex ul a:hover{
+        text-decoration: underline;
+    }
 }
