@@ -247,6 +247,9 @@ label{
 .mobile-main{
     display: none;
 }
+.bottom-image{
+    display: none;
+}
 @media (max-width:700px) {
     body{
         background-image: url("./Asests/mobile_login_bg.webp");
@@ -355,5 +358,15 @@ label{
     }
     .about-flex ul a:hover{
         text-decoration: underline;
+    }
+    .bottom-image{
+        display: block;
+        background-image: url("./Asests/mobile_login_bottom.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 10%;
+        position: absolute;
+        bottom: 0;
     }
 }
